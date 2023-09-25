@@ -252,6 +252,10 @@ section {
     align-content: center;
 }
 
+/* benefits  */
+#benefits .number {
+    font-size: 3em;
+}
 
 /* media query  */
 @media screen and (min-width: 576px) {
@@ -289,6 +293,13 @@ section {
         justify-content: space-between;
         column-gap: 30px;
     }
+    #benefits .card-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #benefits .card-container .col {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width:1200px ) {
@@ -306,5 +317,8 @@ section {
     }
     .planning-intro, .planning-card {
         width:45%;
+    }
+    #benefits .card-container .col {
+        width: 33%;
     }
 }
