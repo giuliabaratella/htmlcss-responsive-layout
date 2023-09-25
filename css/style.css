@@ -223,13 +223,7 @@ section {
 
 /* media query  */
 @media screen and (min-width: 576px) {
-    nav .submenu {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    nav .menu-icon {
-        display:none;
-    }
+    
     .d-flex-576 {
         display: flex;
         flex-flow: row wrap;
@@ -245,6 +239,16 @@ section {
         width: calc((100% / 3) *2);
     }
 
+}
+
+@media screen and (min-width:992px) {
+    nav .submenu {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    nav .menu-icon {
+        display:none;
+    }
 }
 
 @media screen and (min-width:1200px ) {
