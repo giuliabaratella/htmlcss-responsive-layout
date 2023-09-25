@@ -162,6 +162,10 @@ a {
     color: var(--color-primary-color);
 }
 
+.white-button:hover, .blue-button:hover, .primary-button:hover, .big-button:hover {
+    box-shadow: 1px 2px 6px 2px rgba(34, 32, 151, 0.3);
+}
+
 /* flex  */
 .d-flex {
     display: flex;
@@ -222,6 +226,12 @@ nav .submenu, nav .menu-hidden {
 
 .submenu li:hover {
     background-color: var(--color-bg-card);
+}
+.menu-hidden li:hover a {
+    text-decoration: underline;
+}
+.menu-hidden a.white-button:hover {
+    text-decoration: none;
 }
 
 
