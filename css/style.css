@@ -57,11 +57,11 @@ img {
 
 /* bordi */
 .small-border-rounded {
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .big-border-rounded {
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .circle {
@@ -80,6 +80,10 @@ img {
 .px-20 {
     padding-left:20px;
     padding-right: 20px;
+}
+.px-40 {
+    padding-left:40px;
+    padding-right: 40px;
 }
 .py-20 {
     padding-top: 20px;
@@ -100,10 +104,18 @@ img {
     text-align: center;
 }
 .line-height {
-    line-height: 1.5;
+    line-height: 2;
 }
 .text-bold {
     font-weight: bold;
+}
+.letter-spacing {
+    letter-spacing: 5px;
+}
+
+/* divisori  */
+.small-divider {
+    margin-bottom: 20px;
 }
 
 /* liste e ancore  */
@@ -123,6 +135,13 @@ a {
     padding: 7px 15px;
     color: var(--color-text);
     border: 1px solid var(--color-light-color);
+}
+
+.blue-button {
+    background-color: var(--color-secondary-color);
+    padding: 10px 40px;
+    color: var(--color-light-color);
+    border: 1px solid var(--color-secondary-color);
 }
 
 /* flex  */
@@ -171,6 +190,37 @@ nav .menu-icon {
     font-size: 2em;
 }
 
+/* main */
+h3 {
+    font-size: 2em;
+}
+section {
+    padding: 50px 0;
+}
+
+/* intro  */
+.col {
+    padding: 15px;
+}
+.card {
+    height: 100%;
+}
+.card-image {
+    position:relative;
+    top:20px;
+}
+.icon {
+    margin-bottom: 10px;
+    font-size: 3em;
+    color: var(--color-secondary-color);
+}
+.card-icon {
+    color: var(--color-secondary-color);
+    font-size: 5em;
+}
+
+
+
 /* media query  */
 @media screen and (min-width: 576px) {
     nav .submenu {
@@ -180,5 +230,29 @@ nav .menu-icon {
     nav .menu-icon {
         display:none;
     }
+    .d-flex-576 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .align-stretch {
+        align-items: stretch;
+        align-content: stretch;
+    }
+    #intro .col {
+        width:calc(100% / 3);
+    }
+    #intro .col:first-child {
+        width: calc((100% / 3) *2);
+    }
 
+}
+
+@media screen and (min-width:1200px ) {
+    .container {
+        max-width:1200px ;
+        margin: 0 auto;
+    }
+    #intro .col:first-child .card {
+        display:flex;
+    }
 }
