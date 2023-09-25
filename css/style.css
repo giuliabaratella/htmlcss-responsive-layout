@@ -257,6 +257,11 @@ section {
     font-size: 3em;
 }
 
+#about-us h4{
+    font-size:2em;
+
+}
+
 /* media query  */
 @media screen and (min-width: 576px) {
     
@@ -299,6 +304,16 @@ section {
     }
     #benefits .card-container .col {
         width: 50%;
+    }
+    .about-us-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .about-us-text{
+        width:60%;
+    }
+    .about-us-quote {
+        width:30%;
     }
 }
 
