@@ -262,6 +262,17 @@ section {
 
 }
 
+/* footer  */
+footer {
+    padding: 50px 0;
+}
+footer p {
+    max-width:400px;
+}
+footer a {
+    text-decoration: underline;
+}
+
 /* media query  */
 @media screen and (min-width: 576px) {
     
