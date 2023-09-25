@@ -115,6 +115,9 @@ img {
 .text-uppercase {
     text-transform: uppercase;
 }
+.word-break {
+    word-break: break-all;
+}
 
 /* divisori  */
 .small-divider {
@@ -326,7 +329,7 @@ footer a {
 /* media query  */
 @media screen and (min-width: 576px) {
     
-    .d-flex-576 {
+    .intro-container {
         display: flex;
         flex-flow: row wrap;
     }
@@ -335,12 +338,25 @@ footer a {
         align-content: stretch;
     }
     #intro .col {
+        width:calc(100% / 2);
+    }
+    #intro .col:first-child {
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    #intro .col {
         width:calc(100% / 3);
     }
     #intro .col:first-child {
         width: calc((100% / 3) *2);
     }
-
+    .call-to-action-container  {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    
 }
 
 @media screen and (min-width:992px) {
@@ -351,12 +367,14 @@ footer a {
     nav .hamburger-menu {
         display:none;
     }
-    /* .hamburger-menu:hover .submenu {
-        display: none;
-    } */
     section {
         padding: 100px 0;
     }
+    .planning-intro, .planning-card {
+        max-width: 896px;
+        margin: 0 auto;
+    }
+
     #testimonials .card {
         flex-direction: row;
         justify-content: space-between;
@@ -379,10 +397,7 @@ footer a {
     .about-us-quote {
         width:30%;
     }
-    .call-to-action-container  {
-        max-width: 50%;
-        margin: 0 auto;
-    }
+    
 }
 
 @media screen and (min-width:1200px ) {
