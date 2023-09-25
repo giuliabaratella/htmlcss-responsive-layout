@@ -117,6 +117,9 @@ img {
 .small-divider {
     margin-bottom: 20px;
 }
+.big-divider {
+    margin-bottom: 50px;
+}
 
 /* liste e ancore  */
 ul {
@@ -142,6 +145,13 @@ a {
     padding: 10px 40px;
     color: var(--color-light-color);
     border: 1px solid var(--color-secondary-color);
+}
+
+.primary-button {
+    background-color: var(--color-primary-color);
+    padding: 10px 40px;
+    color: var(--color-light-color);
+    border: 1px solid var(--color-primary-color);
 }
 
 /* flex  */
@@ -191,6 +201,9 @@ nav .menu-icon {
 }
 
 /* main */
+h2 {
+    font-size: 3em;
+}
 h3 {
     font-size: 2em;
 }
@@ -209,14 +222,17 @@ section {
     position:relative;
     top:20px;
 }
-.icon {
-    margin-bottom: 10px;
-    font-size: 3em;
-    color: var(--color-secondary-color);
-}
 .card-icon {
     color: var(--color-secondary-color);
     font-size: 5em;
+}
+
+/* planning  */
+#planning .card p {
+    font-style: oblique;
+}
+#planning .card a {
+    color: var(--color-text);
 }
 
 
@@ -249,6 +265,9 @@ section {
     nav .menu-icon {
         display:none;
     }
+    section {
+        padding: 100px 0;
+    }
 }
 
 @media screen and (min-width:1200px ) {
@@ -258,5 +277,13 @@ section {
     }
     #intro .col:first-child .card {
         display:flex;
+    }
+    .d-flex-1200 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .planning-intro, .planning-card {
+        width:45%;
     }
 }
