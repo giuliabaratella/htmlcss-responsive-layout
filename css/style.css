@@ -1,0 +1,51 @@
+/* general  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-secondary-color: #0084fd;
+    --color-dark-color: #333333;
+    --color-light-color: #ffffff;
+    --color-primary-color: #9792e4;
+    --color-bg-card: #b5ddff;
+    --color-contrast-color: #fcc060;
+    --color-text: #424242;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: var(--color-light-color);
+    color: var(--color-text);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    width:100%;
+}
+
+/* utility */
+/* sfondi  */
+
+.bg-primary {
+    background-color: var(--color-primary-color);
+}
+.bg-secondary {
+    background-color: var(--color-secondary-color);
+}
+.bg-light {
+    background-color: var(--color-light-color);
+}
+.bg-card-intro {
+    background-color: var(--color-bg-card);
+}
+.bg-footer {
+    background-color: var(--color-dark-color);
+}
