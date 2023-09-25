@@ -156,6 +156,11 @@ a {
     color: var(--color-light-color);
     border: 1px solid var(--color-primary-color);
 }
+.big-button {
+    padding: 20px 50px;
+    background-color: var(--color-light-color);
+    color: var(--color-primary-color);
+}
 
 /* flex  */
 .d-flex {
@@ -262,6 +267,19 @@ section {
 
 }
 
+/* call to action  */
+#call-to-action h2 {
+    color: var(--color-contrast-color);
+    font-size: 4em;
+}
+#call-to-action .copyright {
+    font-size: 0.9em;
+}
+#call-to-action .copyright i{
+    font-size: 0.2em;
+}
+
+
 /* footer  */
 footer {
     padding: 50px 0;
@@ -325,6 +343,10 @@ footer a {
     }
     .about-us-quote {
         width:30%;
+    }
+    .call-to-action-container  {
+        max-width: 50%;
+        margin: 0 auto;
     }
 }
 
